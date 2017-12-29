@@ -1,0 +1,8 @@
+print中加号为无缝衔接，逗号中间有一个空格
+eg：
+print 'a'+'b'
+结果 ab
+print 'a','b'
+结果 a b
+除此之外，print ('a'+'b')输出 ab
+但是，print （'a','b')输出 （'a','b')
