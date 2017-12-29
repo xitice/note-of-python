@@ -1,0 +1,16 @@
+此问题解决方法来自知乎用户 一妖 。
+
+python2 编码方式是 ASCII
+python3 编码方式是unicode
+python2中输入中文报错解决方法：首行加 # -*-coding:utf-8-*-
+加了后powershell中仍然中文乱码，原因：powershell中编码格式默认为系统编码格式，大多数系统编码格不是utf-8,是gbk，所以会乱码，
+输出汉字方法：重要输出时print u"你好"就行了。
+u指unicode编码方式
+unicode编码对于大多数编码方式能被识别
+对于python3就不存在这样的编码问题
+
+一妖原答案中的例子：
+answer = raw_input("请输入你是谁".decode('utf-8').encode('gbk'))
+print u"竟然是%s,那你好"% (answer.decode('gbk'))
+
+decode是转成unicode码,cencode是转为需要的编码方式
