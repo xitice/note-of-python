@@ -1,0 +1,7 @@
+close 关闭文件
+read 读取文件
+readline 读取文本文件中的一行
+truncate 清空文件
+write(stuff) 将stuff写入文件
+
+打开一个文件 x = open（将文件赋予的变量）
